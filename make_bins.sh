@@ -1,17 +1,28 @@
 #! /bin/bash
 set -eux
 
+
 # Clean every time
 yes | rm -R temp/
 
+
+# Make a working folder
 mkdir temp
 cd temp
-git clone --recursive --depth 1 https://github.com/ANTsX/ANTs.git
 
+
+# Get the source
+git clone --recursive https://github.com/ANTsX/ANTs.git
+cd ANTs
+git checkout f23cba1
+cd ../
+
+
+# Run CMake
 mkdir build
 cd build
-
 cmake ../ANTs
 
-make -j8
 
+# Ants has a superbuild, so this should pull down dependencies
+make -j8
