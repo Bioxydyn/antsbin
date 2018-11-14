@@ -1,0 +1,8 @@
+
+antsbin\.egg-info/
+
+*.pyc
+
+antsbin/antsApplyTransforms
+
+antsbin/antsRegistration
