@@ -6,3 +6,8 @@ antsbin\.egg-info/
 antsbin/antsApplyTransforms
 
 antsbin/antsRegistration
+
+
+temp/
+build/
+dist/
