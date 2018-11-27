@@ -3,12 +3,11 @@ set -eux
 
 
 # Clean every time
-yes | rm -R temp/
+yes | rm -rf temp/
 
 
 # Make a working folder
-mkdir temp
-cd temp
+mkdir temp && cd temp
 
 
 # Get the source
@@ -19,8 +18,7 @@ cd ../
 
 
 # Run CMake
-mkdir build
-cd build
+mkdir build && cd build
 cmake ../ANTs
 
 
