@@ -15,7 +15,8 @@ RUN apk add --update \
   bash \
   zlib \
   zlib-dev \
-  git
+  git \
+  python3
 
 # Clone the relevant repositories, yes it is fucking meta
 RUN git clone --recursive https://github.com/Bioxydyn/antsbin.git && \
