@@ -13,7 +13,7 @@ mkdir temp && cd temp
 # Get the source
 git clone --recursive https://github.com/mj-heaton/ANTs.git
 cd ANTs
-# git checkout f23cba1
+git checkout 0958391
 cd ../
 
 
