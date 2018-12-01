@@ -7,6 +7,9 @@ USER root
 RUN apk add --update \
   gcc \
   g++ \
+  binutils \
+  libgcc \
+  musl-dev \
   make \
   cmake \
   bash \
@@ -27,7 +30,6 @@ RUN apk add --update \
 # Clone the relevant repositories, yes it is fucking meta
 RUN git clone --recursive https://github.com/Bioxydyn/antsbin.git && \
     cd antsbin && \
-    git checkout a42b5c3 && \
     /bin/bash make_bins.sh
 
 
