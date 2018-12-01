@@ -23,4 +23,4 @@ cmake -D CMAKE_EXE_LINKER_FLAGS="-static" ../ANTs
 
 
 # Ants has a superbuild, so this should pull down dependencies
-make -j8
+make -j$(nproc)
