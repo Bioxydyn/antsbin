@@ -3,6 +3,6 @@ set -eux
 
 ./make_bins.sh
 
-
-python setup.py bdist_wheel
-python setup.py bdist_wheel
+pip3 install -r requirements.txt
+python3 setup.py bdist_wheel
+python3 setup.py bdist_wheel
