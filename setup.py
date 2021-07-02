@@ -57,7 +57,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/bioxydyn/antsbin",
-    ext_modules=[ANTsExtension('ants', 'temp/build/bin')],
+    ext_modules=[ANTsExtension('ants', 'temp/build/ANTS-build/Examples')],
     cmdclass=dict(build_ext=BinCopier),
     package_dir={'antsbin': 'antsbin'},
     packages=setuptools.find_packages(),

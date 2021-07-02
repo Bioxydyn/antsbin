@@ -1,4 +1,4 @@
-FROM alpine:3.8 AS builder
+FROM alpine:3.13 AS builder
 
 # Become root.
 USER root
