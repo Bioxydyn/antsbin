@@ -6,6 +6,7 @@ USER root
 # Install some base packages, mainly for building certain pip modules
 RUN apk add --update \
   gcc \
+  linux-headers \
   g++ \
   binutils \
   libgcc \
@@ -18,7 +19,7 @@ RUN apk add --update \
   git \
   python3
 
-# Clone the relevant repositories, yes it is fucking meta
+# Clone the relevant repositories
 RUN git clone --recursive https://github.com/Bioxydyn/antsbin.git && \
     cd antsbin && \
     /bin/bash make_wheel.sh
