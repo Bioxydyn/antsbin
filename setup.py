@@ -49,10 +49,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="antsbin",
-    version="0.1.1",
+    version="0.2.1",
     zip_safe=True,
     author="Bioxydyn Ltd",
-    author_email="matthew.heaton@bioxydyn.com",
+    author_email="info@bioxydyn.com",
     description="Binaries for ANTs packaged using pip",
     long_description=long_description,
     long_description_content_type="text/markdown",
