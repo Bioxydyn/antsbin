@@ -17,7 +17,8 @@ RUN apk add --update \
   zlib \
   zlib-dev \
   git \
-  python3
+  python3 \
+  py3-pip
 
 # Clone the relevant repositories
 RUN git clone --recursive https://github.com/Bioxydyn/antsbin.git && \

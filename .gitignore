@@ -11,3 +11,4 @@ antsbin/antsRegistration
 temp/
 build/
 dist/
+*.whl
