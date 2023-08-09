@@ -10,9 +10,9 @@ yes | rm -rf temp/
 mkdir temp && cd temp
 
 # Get the source
-git clone --recursive https://github.com/mj-heaton/ANTs.git
+git clone --recursive https://github.com/ANTsX/ANTs.git
 cd ANTs
-git checkout 444b85c42fab18f9bf202d69deb7ab46bff40b33
+git checkout dfd9e6664f2fc5f0dbd05c6c23d5e4895e82abee
 cd ../
 
 
