@@ -49,7 +49,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="antsbin",
-    version="0.2.1",
+    version="0.3.0",
     zip_safe=True,
     author="Bioxydyn Ltd",
     author_email="info@bioxydyn.com",
